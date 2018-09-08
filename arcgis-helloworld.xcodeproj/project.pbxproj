@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F419E921BF2E51583EFBF7D5 /* libPods-arcgis-helloworld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7ED2A7706778871F2E64B7 /* libPods-arcgis-helloworld.a */; };
+		F90C7CFE21434C4700D728AA /* DisplayLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C7CF721434C4700D728AA /* DisplayLocationViewController.swift */; };
+		F90C7CFF21434C4700D728AA /* CustomContextSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C7CF821434C4700D728AA /* CustomContextSheet.swift */; };
+		F90C7D0221434C4700D728AA /* MotionDnaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C7CFB21434C4700D728AA /* MotionDnaController.swift */; };
+		F90C7D0421434C4700D728AA /* DisplayLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90C7CFD21434C4700D728AA /* DisplayLocation.storyboard */; };
+		F90C7D0621434D1900D728AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90C7D0521434D1800D728AA /* Images.xcassets */; };
 		F94F15B021405C4600021011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F15AF21405C4600021011 /* AppDelegate.swift */; };
-		F94F15B221405C4600021011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F15B121405C4600021011 /* ViewController.swift */; };
-		F94F15B521405C4600021011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F15B321405C4600021011 /* Main.storyboard */; };
 		F94F15B721405C4600021011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94F15B621405C4600021011 /* Assets.xcassets */; };
 		F94F15BA21405C4600021011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F15B821405C4600021011 /* LaunchScreen.storyboard */; };
 		F94F15C521405C4700021011 /* arcgis_helloworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F15C421405C4700021011 /* arcgis_helloworldTests.swift */; };
@@ -34,10 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C7ED2A7706778871F2E64B7 /* libPods-arcgis-helloworld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-arcgis-helloworld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1447ECEF86DA86A1620DA20 /* Pods-arcgis-helloworld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arcgis-helloworld.release.xcconfig"; path = "Pods/Target Support Files/Pods-arcgis-helloworld/Pods-arcgis-helloworld.release.xcconfig"; sourceTree = "<group>"; };
+		EC1732F490ED855A8DF2003F /* Pods-arcgis-helloworld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arcgis-helloworld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-arcgis-helloworld/Pods-arcgis-helloworld.debug.xcconfig"; sourceTree = "<group>"; };
+		F90C7CF721434C4700D728AA /* DisplayLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLocationViewController.swift; sourceTree = "<group>"; };
+		F90C7CF821434C4700D728AA /* CustomContextSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomContextSheet.swift; sourceTree = "<group>"; };
+		F90C7CFB21434C4700D728AA /* MotionDnaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionDnaController.swift; sourceTree = "<group>"; };
+		F90C7CFD21434C4700D728AA /* DisplayLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayLocation.storyboard; sourceTree = "<group>"; };
+		F90C7D0521434D1800D728AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F94F15AC21405C4600021011 /* arcgis-helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arcgis-helloworld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94F15AF21405C4600021011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F94F15B121405C4600021011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F94F15B421405C4600021011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F94F15B621405C4600021011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F94F15B921405C4600021011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F94F15BB21405C4600021011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F419E921BF2E51583EFBF7D5 /* libPods-arcgis-helloworld.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A909211C1FC30C52D2119D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC1732F490ED855A8DF2003F /* Pods-arcgis-helloworld.debug.xcconfig */,
+				C1447ECEF86DA86A1620DA20 /* Pods-arcgis-helloworld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9AAD5D2ACC56ADD1C5EB94E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C7ED2A7706778871F2E64B7 /* libPods-arcgis-helloworld.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F94F15A321405C4600021011 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				F94F15C321405C4700021011 /* arcgis-helloworldTests */,
 				F94F15CE21405C4700021011 /* arcgis-helloworldUITests */,
 				F94F15AD21405C4600021011 /* Products */,
+				14A909211C1FC30C52D2119D /* Pods */,
+				C9AAD5D2ACC56ADD1C5EB94E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +127,12 @@
 		F94F15AE21405C4600021011 /* arcgis-helloworld */ = {
 			isa = PBXGroup;
 			children = (
+				F90C7D0521434D1800D728AA /* Images.xcassets */,
+				F90C7CF821434C4700D728AA /* CustomContextSheet.swift */,
+				F90C7CFD21434C4700D728AA /* DisplayLocation.storyboard */,
+				F90C7CF721434C4700D728AA /* DisplayLocationViewController.swift */,
+				F90C7CFB21434C4700D728AA /* MotionDnaController.swift */,
 				F94F15AF21405C4600021011 /* AppDelegate.swift */,
-				F94F15B121405C4600021011 /* ViewController.swift */,
-				F94F15B321405C4600021011 /* Main.storyboard */,
 				F94F15B621405C4600021011 /* Assets.xcassets */,
 				F94F15B821405C4600021011 /* LaunchScreen.storyboard */,
 				F94F15BB21405C4600021011 /* Info.plist */,
@@ -132,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F94F15D421405C4700021011 /* Build configuration list for PBXNativeTarget "arcgis-helloworld" */;
 			buildPhases = (
+				9A6764A011DE71EE9FFDF7EA /* [CP] Check Pods Manifest.lock */,
 				F94F15A821405C4600021011 /* Sources */,
 				F94F15A921405C4600021011 /* Frameworks */,
 				F94F15AA21405C4600021011 /* Resources */,
+				C4E604717FE008052F97C1F7 /* [CP] Embed Pods Frameworks */,
+				2C77190DEBC47944B0BB388C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,8 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94F15BA21405C4600021011 /* LaunchScreen.storyboard in Resources */,
+				F90C7D0621434D1900D728AA /* Images.xcassets in Resources */,
+				F90C7D0421434C4700D728AA /* DisplayLocation.storyboard in Resources */,
 				F94F15B721405C4600021011 /* Assets.xcassets in Resources */,
-				F94F15B521405C4600021011 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +288,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C77190DEBC47944B0BB388C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-arcgis-helloworld/Pods-arcgis-helloworld-resources.sh",
+				"${PODS_ROOT}/ArcGIS-Runtime-SDK-iOS/ArcGIS.framework/ArcGIS.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ArcGIS.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-arcgis-helloworld/Pods-arcgis-helloworld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A6764A011DE71EE9FFDF7EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-arcgis-helloworld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E604717FE008052F97C1F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-arcgis-helloworld/Pods-arcgis-helloworld-frameworks.sh",
+				"${PODS_ROOT}/ArcGIS-Runtime-SDK-iOS/ArcGIS.framework",
+				"${PODS_ROOT}/ArcGIS-Runtime-SDK-iOS/ArcGIS.framework.dSYM",
+				"${PODS_ROOT}/MotionDnaSDK/MotionDnaSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcGIS.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/ArcGIS.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionDnaSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-arcgis-helloworld/Pods-arcgis-helloworld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F94F15A821405C4600021011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94F15B221405C4600021011 /* ViewController.swift in Sources */,
+				F90C7CFF21434C4700D728AA /* CustomContextSheet.swift in Sources */,
+				F90C7D0221434C4700D728AA /* MotionDnaController.swift in Sources */,
+				F90C7CFE21434C4700D728AA /* DisplayLocationViewController.swift in Sources */,
 				F94F15B021405C4600021011 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F94F15B321405C4600021011 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F94F15B421405C4600021011 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F94F15B821405C4600021011 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,11 +520,14 @@
 		};
 		F94F15D521405C4700021011 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1732F490ED855A8DF2003F /* Pods-arcgis-helloworld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z633UZ59K8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "arcgis-helloworld/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +541,14 @@
 		};
 		F94F15D621405C4700021011 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1447ECEF86DA86A1620DA20 /* Pods-arcgis-helloworld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z633UZ59K8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "arcgis-helloworld/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
