@@ -28,7 +28,7 @@ class DisplayLocationViewController: UIViewController, CustomContextSheetDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.map = AGSMap(basemap: AGSBasemap.imagery())
+        self.map = AGSMap(basemap: AGSBasemap.streets())
         
         self.mapView.map = self.map
         
