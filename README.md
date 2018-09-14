@@ -15,5 +15,5 @@ on the ArcGIS canvas.
 
 Have fun!
 
-![Scheme](arcgis_menu.png)
 ![Scheme](arcgis_location_view.png)
+![Scheme](arcgis_menu.png)
