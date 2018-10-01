@@ -86,40 +86,47 @@ class DisplayLocationViewController: UIViewController, CustomContextSheetDelegat
     }
 }
 
-class MotionDnaLocationDisplay: AGSLocationDataSource
+class MotionDnaLocationDisplay: AGSLocationDataSource, MotionDnaLocationManagerDelegate
 {
-    var location_controller:MotionDnaController?
+    func locationManager(_ manager: MotionDnaLocationManagerDataSource!, didUpdate locations: [CLLocation]!) {
+//        let location = AGSLocation(clLocation: locations[0]) --> Can't do this because of lastKnown flags...
+        let location = AGSLocation(position: AGSPoint(clLocationCoordinate2D: locations[0].coordinate), timestamp: locations[0].timestamp, horizontalAccuracy: locations[0].horizontalAccuracy, verticalAccuracy: locations[0].verticalAccuracy, velocity: locations[0].speed, course: locations[0].course, lastKnown: false)
+           
+        
+        DispatchQueue.main.async {
+            self.didUpdate(location)
+        }
+    }
+    
+    func locationManager(_ manager: MotionDnaLocationManagerDataSource!, didFailWithError error: Error!) {
+        
+    }
+    
+    func locationManager(_ manager: MotionDnaLocationManagerDataSource!, didUpdate newHeading: CLHeading!) {
+        DispatchQueue.main.async {
+            self.didUpdateHeading(newHeading.trueHeading)
+        }
+    }
+    
+    func locationManagerShouldDisplayHeadingCalibration(_ manager: MotionDnaLocationManagerDataSource!) -> Bool {
+        return false
+    }
+    
+    let sdk=MotionDnaSDK()
     var view:DisplayLocationViewController?
 
     override init()
     {
         super.init()
-        location_controller=nil
     }
     
-    func receive(_ motionDna: MotionDna)
-    {
-        // Point of internal data source override.
-        let location = AGSLocation(position: AGSPoint(clLocationCoordinate2D: CLLocationCoordinate2DMake(motionDna.getLocation().globalLocation.latitude, motionDna.getLocation().globalLocation.longitude)), horizontalAccuracy: motionDna.getLocation().absoluteAltitudeUncertainty, velocity: motionDna.getMotion().stepFrequency, course: CLLocationDirection(motionDna.getLocation().heading), lastKnown: false)
-        DispatchQueue.main.async {
-            self.didUpdate(location)
-            self.didUpdateHeading(motionDna.getLocation().heading)
-        }
-    }
-
     override func doStart() {
         super.doStart()
-        // Start the navisens location system through the MotionDnaController wrapper.
-        if (self.location_controller==nil)
-        {
-            self.location_controller=MotionDnaController()
-        }
-        else{
-            location_controller?.stop()
-        }
-        location_controller?.start(self)
-        location_controller?.setLocationNavisens()
-        //        location_controller?.setLocationLatitude(37.787742, longitude: -122.396859, andHeadingInDegrees: 315)
+        sdk.runMotionDna("")
+        sdk.setExternalPositioningState(HIGH_ACCURACY)
+        sdk.setLocationNavisens()
+        sdk.motionDnaDelegate=self
+        //sdk.setLocationLatitude(37.787742, longitude: -122.396859, andHeadingInDegrees: 315)
         self.didStartOrFailWithError(nil)
     }
 
@@ -141,6 +148,6 @@ class MotionDnaLocationDisplay: AGSLocationDataSource
     }
     
     override func doStop() {
-        location_controller?.stop()
+        sdk.stop()
     }
 }
