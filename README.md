@@ -2,7 +2,7 @@
 This is an example of Navisens' SDK integration with ArcGIS' SDK.
 
 Then retrieve a Navisens SDK key [here](https://navisens.com/).  
-And add it to the `runMotionDna` method in the `MotionDnaController.swift` file.
+And add it to the `runMotionDna` method in the `DisplayLocationViewController.swift` file.
 
 When you are done with all your key retrievals, run:
 ```
